@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Project2</title>
+ 
+<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+<link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.0/jquery.qtip.min.css" />
+<link rel="stylesheet" href="css/website.css" type="text/css" media="screen"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.js"></script>
+<script src="http://motherjones.github.io/newsquiz/js/jquery.js"></script>
+<script src="http://motherjones.github.io/newsquiz/js/tabletop.js"></script>
+<script src="js/newsquiz.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/qtip2/2.2.0/jquery.qtip.min.js"></script>
+    
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+  $('.flexslider').flexslider({
+    slideshow: false
+  });
+});
+</script>
+
+<script>
+    var corners = [
+   'bottomLeft', 'bottomRight', 'bottomMiddle',
+   'topRight', 'topLeft', 'topMiddle',
+   'leftMiddle', 'leftTop', 'leftBottom',
+   'rightMiddle', 'rightBottom', 'rightTop'
+];
+var opposites = [
+   'topRight', 'topLeft', 'topMiddle',
+   'bottomLeft', 'bottomRight', 'bottomMiddle',
+   'rightMiddle', 'rightBottom', 'rightTop',
+   'leftMiddle', 'leftTop', 'leftBottom'
+];
+var i = 0;
+    $(document).ready(function(){
+            
+    console.log("Everything is ready to go!")
+         //$("p").hide();
+    $("button").click(function(){
+     $("#test").hide();
+     });
+            
+    $('a').each(function() {
+        $(this).qtip({
+            content: {
+            text: $(this).next('.tooltiptext')
+            },
+        corner: { target: 'topMiddle', tooltip: 'bottomMiddle' },
+        style: 'qtip-light',
+             });
+         });
+            
+           
+         });
+        
+
+    </script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        
+<div class="row toppart">
+        <div class="col-md-2"><p class="pagetitle">Deep<br>Blue<br>Sea</p></div>
+        <div class="col-md-10 introtext">The ocean is full of fascinating and interesting creatures, but who lives in the deepest depths, and how?
+        This slideshow will give you a comprehensive overview of how the ocean is split up into 5 different zones. Each zone has its own
+        unique characteristics, with varying amounts of light and temperatures that support different kinds of sea creatures.
+        Read on to find out more about these different zones and the life that inhabits them! </div>
+      </div>
+
+    <div class="flexslider">
+  <ul class="slides">
+
+     <li>
+        <img src="images/epilayer.jpg" />
+      <div class="wrapper">
+        <div class="content">
+          <h3>Epipelagic Zone</h3>
+                    <p class="title">The Sunlight Zone</p>
+                    <p><b>Depth:</b> Surface - 200 meters</p>
+                    <p>
+This is the zone of the ocean where most visible light exists. This layer is heated by the sun and accounts
+for the wide range of temperatures in the oceans across the globe. Changes in the position of the sun from summer
+to winter result in the changing temperatures of the ocean with the seasons. This layer can also be mixed by the wind,
+allowing for heat from the surface to be distributed throughout the layer. 
+</p></div></div>
+      <div class="tooltipwrapper">
+        <a href="#test" class="here">You Are Here</a>
+<div class="tooltiptext">
+ <img src="images/ocean-layers-diagram1.jpg">
+</div>
+      </div>
+    </li>
+     <li>
+      <img src="images/twilightpic.jpg" />
+      <div class="wrapper">
+                    <h3>Mesopelagic Zone</h3>
+                    <p class="title">The Twilight Zone</p>
+                    <p><b>Depth:</b> 200 meters - 1,000 meters</p>
+                    <p>
+In this layer, sunlight is very faint, leaving the layer in constant near-darkness. This layer is also home to the thermocline.
+The thermocline is a region where water temperature decreases rapidly with increased depth due to the lack of water mixing from the wind.
+The depth and strength of the thermocline ranges with the season and the year, but it is always strongest in the tropics.  This zone is
+also home to some unique looking sea creatures-animals capable of bioluminesence begin to appear and the eyes of creatures are larger and directed upward towards the dim light. </p></div>
+                    <div class="tooltipwrapper">
+        <a href="#test" class="here">You Are Here</a>
+<div class="tooltiptext">
+ <img src="images/ocean-layers-diagram2.jpg">
+</div>
+      </div>
+    </li>
+<li>
+      <img src="images/anglerfish.jpg" />
+      <div class="wrapper">
+          <p>
+            <h3>Bathypelagic Zone</h3>
+                    <p class="title">The Midnight Zone</p>
+                    <p><b>Depth:</b> 1,000 meters - 4,000 meters</p>
+                    <p>
+This zone is submerged in constant darkness. The only light at this depth comes from the bioluminescence of the animals that inhabit it.
+Organisms achieve bioluminescence by producing their own light through the process of chemical reaction in which an enzyme reacts with oxygen to create light.
+The temperature at this zone is constant, at 39 degrees Fahrenheit. This zone also has an extreme amount of pressure and can reach over 5,000 pounds per square
+inch at its deepest level. </p></div>
+                    <div class="tooltipwrapper">
+        <a href="#test" class="here">You Are Here</a>
+<div class="tooltiptext">
+ <img src="images/ocean-layers-diagram3.jpg">
+</div>
+      </div>
+    </li>
+<li>
+      <img src="images/abyss.jpg" />
+      <div class="wrapper">
+          <p>
+            <h3>Abyssopelagic Zone</h3>
+                    <p class="title">The Abyssal Zone</p>
+                    <p><b>Depth:</b> 4,000 meters - 6,000 meters</p>
+                    <p>
+Three quarters of the deep-ocean floor area lies in this zone. The water temperature is constantly near freezing.
+Only a few creatures are able to survive at these depths due to the crushing water pressure found at this level, most of them are invertebrates like squids.
+In this layer, mud is made from the skeletons of small sea animals and can be more than a mile thick in certain areas. </p></div>
+                    <div class="tooltipwrapper">
+        <a href="#test" class="here">You Are Here</a>
+<div class="tooltiptext">
+ <img src="images/ocean-layers-diagram4.jpg">
+</div>
+      </div>
+    </li>
+<li>
+      <img src="images/marianatrenchmap.png" />
+      <div class="wrapper">
+          <p>
+            <h3>Hadalpelagic Zone</h3>
+                    <p class="title">The Trench Zone</p>
+                    <p><b>Depth:</b> 6,000 meters - 10,911 meters</p>
+                    <p>
+This is the deepest zone of the ocean that reaches to the lowest recorded depth, 36,797 feet in the Mariana Trench off the coast of Japan.
+The hadalpelagic zone's name was inspired by Hades, the underworld in Greek mythology. The water pressure at this depth clocks in at over 8 tons per square inch, which is equivalent of the weight of 48 Boeing 747 jets. However,
+life still exists at these crushing depths. Small single-celled organisms, a type of plankton, were discovered in a trench near Guam in the Pacific Ocean.  </p></div>
+                    <div class="tooltipwrapper">
+        <a href="#test" class="here">You Are Here</a>
+<div class="tooltiptext">
+ <img src="images/ocean-layers-diagram5.jpg">
+</div>
+      </div>
+    </li>
+<li>
+        <div class="wrapperocean">
+          <p>
+            <h4>Check out this video to learn more facts about the ocean!</h4></div>
+      <div class="embed-box"><iframe src="http://www.youtube.com/embed/cmKFfYk23_c?list=PLXSwR0BlcGFIfyWIN05b4ZnJNF3Cg_jSp" frameborder="0" allowfullscreen></iframe>
+    </li>
+<li>
+      <img src="images/Ocean1.jpg" />
+      <div class="wrapper">
+          <p>
+           <div id="quiz_container"><h2 class="quiztitle">Quiz time! Let's see what you've learned.</h1></div>
+<div id="quiz_reply"></div>
+
+<script>
+    jQuery(function($) {
+        $('#quiz_container').quiz('0AkO6awheISvvdDlfTlJPRXdpdkJkaTFZZW11X1JBeEE'); //The hard part: writing the actual quiz.
+    });
+</script>
+</p>
+    </li>
+<li>
+    <img src="images/sources.jpg" />
+      <div class="wrapper">
+          <p>
+            <h3>Sources</h3>
+                    <p>Information: <br><a href="http://www.srh.noaa.gov/jetstream/ocean/layers_ocean.htm">NOAA</a>
+                    <br><a href="http://www.seasky.org/deep-sea/ocean-layers.html">SeaSky.org</a></p>
+                    <p>Photos: 
+                    <br><a href="http://en.wikipedia.org/wiki/Marine_habitats">Slide 1 Photo, courtesy of Wikimedia Commons</a>
+          <br><a href="http://en.wikipedia.org/wiki/Marine_habitats">Slide 1 Photo, courtesy of Wikimedia Commons</a>
+          <br><a href="http://upload.wikimedia.org/wikipedia/commons/3/3a/Striped_anglerfish_(_Antennarius_striatus_).jpg ">Slide 3 Photo, courtesy of Wikimedia Commons</a>
+          <br><a href="http://ocean.si.edu/census-marine-life  ">Slide 4 Photo by Hauke Flores, AWI</a>
+          <br><a href="http://ocean.si.edu/ocean-photos/mariana-trench">Slide 5 Photo courtesy of Wikimedia Commons</a>
+          <br><a href="http://www.youtube.com/watch?v=cmKFfYk23_c&list=PLXSwR0BlcGFIfyWIN05b4ZnJNF3Cg_jSp">Slide 6 Video by NOAA</a>
+          <br><a href="http://ocean.si.edu/census-marine-life  ">Slide 7 Photo</a>
+          <br><a href="http://www.flickr.com/photos/natarajam/3429674763/ ">Slide 8 Photo by Andreas Metz</a></p>
+</li>
+  </ul>
+</div>
+      </div>
+
+
+</body>
+</html>
